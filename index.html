@@ -1,1 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portier</title>
+  <style>
+    :root{
+      --royal:#002569;
+      --lazuli:#26619B;
+      --floral:#FFFBE6;
+      --gunmetal:#262C2D;
+    }
 
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:var(--floral);
+      color:var(--gunmetal);
+      line-height:1.6;
+    }
+
+    .serif{
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .container{
+      width:min(1120px, calc(100% - 48px));
+      margin:0 auto;
+    }
+
+    .section{
+      padding:80px 0;
+    }
+
+    .header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:24px 0;
+    }
+
+    .brand{
+      font-size:42px;
+      color:var(--royal);
+      text-decoration:none;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 24px;
+      border-radius:999px;
+      text-decoration:none;
+      font-size:14px;
+      transition:0.2s ease;
+    }
+
+    .btn-primary{
+      background:var(--royal);
+      color:var(--floral);
+    }
+
+    .btn-secondary{
+      border:1px solid rgba(38,44,45,0.15);
+      color:var(--gunmetal);
+    }
+
+    .btn-light{
+      background:var(--floral);
+      color:var(--gunmetal);
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns:1.1fr 0.9fr;
+      gap:56px;
+      align-items:center;
+      padding:48px 0 96px;
+    }
+
+    .eyebrow{
+      font-size:12px;
+      letter-spacing:.3em;
+      text-transform:uppercase;
+      color:var(--lazuli);
+      margin-bottom:18px;
+    }
+
+    h1{
+      margin:0;
+      font-size:72px;
+      line-height:1.05;
+      font-weight:400;
+    }
+
+    h2{
+      margin:0;
+      font-size:52px;
+      line-height:1.1;
+      font-weight:400;
+    }
+
+    h3{
+      margin:0;
+      font-size:32px;
+      font-weight:400;
+    }
+
+    p.lead{
+      font-size:22px;
+      color:rgba(38,44,45,0.8);
+      max-width:620px;
+      margin-top:28px;
+    }
+
+    .actions{
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+      margin-top:36px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.65);
+      border:1px solid rgba(0,37,105,0.08);
+      border-radius:32px;
+      padding:32px;
+      box-shadow:0 18px 60px rgba(0,0,0,0.05);
+    }
+
+    .card-dark{
+      background:var(--royal);
+      color:var(--floral);
+      border-radius:24px;
+      padding:28px;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+      margin-top:48px;
+    }
+
+    .panel{
+      background:rgba(255,255,255,0.7);
+      border:1px solid rgba(38,44,45,0.08);
+      border-radius:28px;
+      padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.04);
+    }
+
+    .blue{
+      color:var(--royal);
+    }
+
+    .muted{
+      color:rgba(38,44,45,0.75);
+    }
+
+    .band{
+      background:var(--royal);
+      color:var(--floral);
+    }
+
+    .band .muted-light{
+      color:rgba(255,251,230,0.8);
+    }
+
+    .cta{
+      background:var(--gunmetal);
+      color:var(--floral);
+      text-align:center;
+    }
+
+    .small{
+      font-size:14px;
+      opacity:.72;
+    }
+
+    @media (max-width: 900px){
+      .hero,
+      .grid-3{
+        grid-template-columns:1fr;
+      }
+
+      h1{font-size:50px}
+      h2{font-size:38px}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <a href="#" class="brand serif">Portier</a>
+      <a href="#contacto" class="btn btn-secondary">Contacto</a>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Control · Claridad · Tiempo</div>
+        <h1 class="serif">Recupera el control de tu vida.</h1>
+        <p class="lead">
+          Portier recupera control, claridad y tiempo en la vida de médicos y ejecutivos,
+          para que puedan diseñar la vida que realmente quieren.
+        </p>
+        <div class="actions">
+          <a href="https://wa.me/528711498929" class="btn btn-primary">Solicitar una llamada</a>
+          <a href="#servicio" class="btn btn-secondary">Conocer Portier</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-dark">
+          <div class="eyebrow" style="color:rgba(255,251,230,0.7); margin-bottom:10px;">Portier</div>
+          <div class="serif" style="font-size:38px; line-height:1.2;">
+            Transformar el tiempo en una vida con intención.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="servicio" class="section">
+    <div class="container">
+      <div style="max-width:780px;">
+        <div class="eyebrow">Qué es Portier</div>
+        <h2 class="serif">El éxito profesional no garantiza una vida plena.</h2>
+        <p class="lead">
+          Puedes tenerlo todo y aún así no tener control de tu tiempo. Portier no es asistencia
+          tradicional. Es una estructura pensada para reducir fricción, recuperar claridad y
+          devolver orden a la vida diaria.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="panel">
+          <h3 class="serif blue">Control</h3>
+          <p class="muted">Recuperar visibilidad y dominio sobre lo personal, lo operativo y lo invisible que hoy te desgasta.</p>
+        </div>
+        <div class="panel">
+          <h3 class="serif blue">Claridad</h3>
+          <p class="muted">Eliminar ruido, reducir carga mental y crear espacio para pensar mejor y decidir con intención.</p>
+        </div>
+        <div class="panel">
+          <h3 class="serif blue">Tiempo</h3>
+          <p class="muted">No para hacer más, sino para vivir mejor: con más presencia, menos interrupción y mejor diseño de vida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="max-width:780px;">
+        <div class="eyebrow">Niveles de servicio</div>
+        <h2 class="serif">Ejecutar, organizar y diseñar.</h2>
+        <p class="lead">
+          Portier acompaña distintos niveles de necesidad: desde ejecutar con precisión lo inmediato,
+          hasta organizar mejor la vida diaria y diseñar una vida con más intención.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="panel">
+          <div class="eyebrow" style="margin-bottom:8px;">Resolver con precisión</div>
+          <h3 class="serif blue">Ejecutar</h3>
+          <p class="muted">Para quienes necesitan liberar carga inmediata y asegurar que lo pendiente avance con orden, seguimiento y ejecución confiable.</p>
+        </div>
+        <div class="panel">
+          <div class="eyebrow" style="margin-bottom:8px;">Crear estructura real</div>
+          <h3 class="serif blue">Organizar</h3>
+          <p class="muted">Para quienes necesitan más que apoyo puntual: una estructura que reduzca fricción, ordene prioridades y devuelva claridad al día a día.</p>
+        </div>
+        <div class="panel">
+          <div class="eyebrow" style="margin-bottom:8px;">Vivir con intención</div>
+          <h3 class="serif blue">Diseñar</h3>
+          <p class="muted">Para quienes buscan que su tiempo, sus decisiones y su estilo de vida estén alineados con la vida que realmente quieren construir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center;">
+        <div>
+          <div class="eyebrow" style="color:rgba(255,251,230,0.65);">Cómo se siente</div>
+          <h2 class="serif">Menos fricción. Más intención.</h2>
+          <p class="lead muted-light" style="max-width:760px;">
+            Portier está diseñado para personas que ya operan en un nivel alto, pero saben que su vida puede estar mejor organizada, mejor sostenida y mejor vivida.
+          </p>
+        </div>
+        <div class="panel" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.1); color:var(--floral);">
+          <ul style="margin:0; padding-left:20px; line-height:2;">
+            <li>Reducción de carga mental</li>
+            <li>Menos pendientes dispersos</li>
+            <li>Más orden en lo cotidiano</li>
+            <li>Mayor sensación de control</li>
+            <li>Tiempo mejor vivido</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="max-width:780px;">
+        <div class="eyebrow">Casos</div>
+        <h2 class="serif">Cómo se ve en la vida real.</h2>
+        <p class="lead">Portier no cambia lo que haces. Cambia cómo lo vives.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="panel">
+          <h3 class="serif blue">Médico especialista</h3>
+          <p class="muted"><strong>Antes:</strong> Agenda llena, múltiples frentes abiertos, decisiones constantes y poco espacio mental.</p>
+          <p><strong style="color:var(--royal);">Después:</strong> Menos interrupciones, prioridades claras y tiempo de calidad fuera del consultorio.</p>
+        </div>
+        <div class="panel">
+          <h3 class="serif blue">Ejecutivo</h3>
+          <p class="muted"><strong>Antes:</strong> Días saturados, pendientes dispersos y sensación de estar siempre reaccionando.</p>
+          <p><strong style="color:var(--royal);">Después:</strong> Estructura, control del día a día y espacio real para pensar y decidir mejor.</p>
+        </div>
+        <div class="panel">
+          <h3 class="serif blue">Empresario</h3>
+          <p class="muted"><strong>Antes:</strong> Operación constante, carga invisible y poco tiempo para su vida personal.</p>
+          <p><strong style="color:var(--royal);">Después:</strong> Menos fricción, más orden y una vida alineada con lo que realmente quiere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section cta">
+    <div class="container" style="max-width:900px;">
+      <div class="eyebrow" style="color:rgba(255,251,230,0.6);">Siguiente paso</div>
+      <h2 class="serif">Recupera el control de tu tiempo.</h2>
+      <p class="lead" style="color:rgba(255,251,230,0.82); margin-left:auto; margin-right:auto;">
+        Portier está diseñado para personas que ya operan en un nivel alto, pero saben que su vida puede estar mejor organizada, más clara y mejor vivida.
+      </p>
+
+      <div class="actions" style="justify-content:center;">
+        <a href="https://wa.me/528711498929" class="btn btn-light">Agendar conversación privada</a>
+        <a href="mailto:daniel@portierlife.com" class="btn" style="border:1px solid rgba(255,255,255,0.18); color:var(--floral);">Escribir por correo</a>
+      </div>
+
+      <p class="small" style="margin-top:28px;">
+        Daniel Quistian Verduzco · Torreón, Coah. · daniel@portierlife.com
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
