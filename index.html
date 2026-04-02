@@ -214,19 +214,23 @@
     }
 
     .hero {
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(180deg, #20282B 0%, #262C2D 100%);
-      color: var(--floral);
-    }
+  position: relative;
+  overflow: hidden;
+  color: var(--floral);
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(38, 44, 45, 0.72) 0%,
+      rgba(38, 44, 45, 0.52) 38%,
+      rgba(38, 44, 45, 0.22) 68%,
+      rgba(38, 44, 45, 0.08) 100%
+    ),
+    url('./hero-portier.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 78% 24%, rgba(38, 97, 155, 0.22), transparent 28%);
-      pointer-events: none;
-    }
 
     .hero-grid {
       position: relative;
