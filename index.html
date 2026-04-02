@@ -285,45 +285,12 @@
     }
 
     .hero-watermark {
-      position: absolute;
-      right: -40px;
-      top: 10px;
-      width: min(34vw, 430px);
-      opacity: 0.075;
-    }
-
-    .hero-card {
-      position: relative;
-      z-index: 1;
-      width: min(100%, 460px);
-      padding: 34px;
-      border: 1px solid rgba(255, 251, 230, 0.1);
-      border-radius: var(--radius-xl);
-      background: linear-gradient(180deg, rgba(255, 251, 230, 0.05), rgba(255, 251, 230, 0.02));
-      box-shadow: 0 30px 100px rgba(0, 0, 0, 0.16);
-      backdrop-filter: blur(10px);
-    }
-
-    .hero-card-logo {
-      width: 150px;
-      margin-bottom: 28px;
-    }
-
-    .hero-card-quote {
-      font-family: 'Sinera', serif;
-      font-size: clamp(30px, 4vw, 48px);
-      line-height: 1.06;
-      color: var(--floral);
-    }
-
-    .hero-card-script {
-      display: inline-block;
-      margin-top: 18px;
-      font-family: 'Reey', cursive;
-      font-size: 34px;
-      color: rgba(255, 251, 230, 0.82);
-      transform: rotate(-3deg);
-    }
+  position: absolute;
+  right: -20px;
+  top: 40px;
+  width: min(34vw, 420px);
+  opacity: 0.08;
+}
 
     .manifesto {
       background: var(--floral);
@@ -372,10 +339,6 @@
       border-radius: var(--radius-xl);
       background: rgba(255, 255, 255, 0.52);
       box-shadow: var(--shadow);
-    }
-
-    .what-card {
-      padding: 34px;
     }
 
     .service-grid,
@@ -662,14 +625,8 @@
         </div>
 
         <div class="hero-aside">
-          <img class="hero-watermark" src="./PORT_ICONO_CREMA.png" alt="" aria-hidden="true" />
-
-          <div class="hero-card">
-            <img class="hero-card-logo" src="./PORT_LOGO_CREMA.png" alt="Portier" />
-            <div class="hero-card-quote">Transformar el tiempo en una vida con intención.</div>
-            <div class="hero-card-script">Gestión privada de tu estilo de vida.</div>
-          </div>
-        </div>
+  <img class="hero-watermark" src="./PORT_ICONO_CREMA.png" alt="" aria-hidden="true" />
+</div>
       </div>
     </div>
   </section>
@@ -691,22 +648,22 @@
   </section>
 
   <section class="section">
-    <div class="container split">
-      <div>
-        <p class="eyebrow">La diferencia</p>
-        <h2>Portier no es asistencia.<br />Es recuperar el control de tu vida.</h2>
-      </div>
+    <div class="container">
+  <p class="eyebrow">La diferencia</p>
 
-      <div class="card what-card">
-        <p>
-  No se trata de hacer más cosas por ti.<br />
-  Se trata de eliminar fricción, liberar tu atención y devolverte la claridad necesaria para decidir cómo quieres vivir.
-  <br /><br />
-  Portier no gestiona tareas.<br />
-  Diseña la estructura invisible que sostiene tu vida.
-</p>
-      </div>
-    </div>
+  <div class="manifesto-block" style="max-width: 980px;">
+    <div class="manifesto-line">Portier no es asistencia.</div>
+    <div class="manifesto-line blue">Es recuperar el control de tu vida.</div>
+  </div>
+
+  <p class="manifesto-sub" style="max-width: 760px; margin-top: 28px;">
+    No se trata de hacer más cosas por ti. Se trata de eliminar fricción, liberar tu atención y devolverte la claridad necesaria para decidir cómo quieres vivir.
+  </p>
+
+  <p class="manifesto-sub" style="max-width: 760px; margin-top: 18px;">
+    Portier no gestiona tareas. Diseña la estructura invisible que sostiene tu vida.
+  </p>
+</div>
   </section>
 
   <section class="section" id="niveles">
